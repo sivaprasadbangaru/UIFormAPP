@@ -8,5 +8,6 @@ namespace ForumApplication.ViewModel
 {
     public class Class1
     {
+        
     }
 }

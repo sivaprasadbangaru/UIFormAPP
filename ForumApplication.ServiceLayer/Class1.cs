@@ -8,5 +8,6 @@ namespace ForumApplication.ServiceLayer
 {
     public class Class1
     {
+
     }
 }
