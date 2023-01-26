@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ForumaApplication.DataModel
 {
-    public class Category
+    public class Categories
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

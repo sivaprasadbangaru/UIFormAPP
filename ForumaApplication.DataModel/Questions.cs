@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ForumaApplication.DataModel
 {
-    public class Question
+    public class Questions
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -22,10 +22,10 @@ namespace ForumaApplication.DataModel
         public int ViewsCount { get; set; }
 
         [ForeignKey("UserID")]
-        public virtual User Users { get; set; }
+        public virtual Users Users { get; set; }
         [ForeignKey("CategoryID")]
-        public virtual Category Category { get; set; }
-        public virtual List<Answer> Answers { get; set; }  
+        public virtual Categories Category { get; set; }
+        public virtual List<Answers> Answers { get; set; }  
 
     }
 }

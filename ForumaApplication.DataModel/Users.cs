@@ -4,7 +4,7 @@ using System.Net.NetworkInformation;
 
 namespace ForumaApplication.DataModel
 {
-    public class User
+    public class Users
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

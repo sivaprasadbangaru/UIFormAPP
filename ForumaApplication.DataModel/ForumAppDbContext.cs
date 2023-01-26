@@ -10,10 +10,11 @@ namespace ForumaApplication.DataModel
 {
     public class ForumAppDbContext  : DbContext
     {
-        public DbSet<User> Users { get; set; }
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Question> Questions { get; set; } 
-        public DbSet<Answer> Answers { get; set; } 
-        public DbSet<Vote> Votes { get; set; } 
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Categories> Category { get; set; }
+        public DbSet<Questions> Questions { get; set; } 
+        public DbSet<Answers> Answers { get; set; } 
+        public DbSet<Votes> Votes { get; set; } 
+
     }
 }

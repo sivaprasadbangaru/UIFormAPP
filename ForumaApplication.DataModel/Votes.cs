@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ForumaApplication.DataModel
 {
-    public class Vote
+    public class Votes
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
