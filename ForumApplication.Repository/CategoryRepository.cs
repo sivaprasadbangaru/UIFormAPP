@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ForumApplication.Repository
 {
-    interface ICategoryRepository
+   public interface ICategoryRepository
     {
         void InsertCategory(Categories c);
         void UpdateCategory(Categories c);  
@@ -26,7 +26,8 @@ namespace ForumApplication.Repository
         }  
         public void UpdateCategory(Categories c)
         {
-         Categories category =    _dbcontext.Category.Where(x=>x.CategoryID== c.CategoryID).FirstOrDefault();
+         Categories category =    _dbcontext.Category.Where(x=>x.CategoryID== 
+         c.CategoryID).FirstOrDefault();
            if(category != null)
             {
                 category.CategoryName = c.CategoryName;
@@ -47,7 +48,7 @@ namespace ForumApplication.Repository
         public Categories GetCategoryByCategoryID(int categoryid)
         {
             //Categories cat = _dbcontext.Category.Where(x=>x.CategoryID== categoryid).FirstOrDefault();
-            //return cat; 
+            //return cat;  
            return _dbcontext.Category.Find(categoryid);
         }
     }

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApplication.ViewModel"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApplication.Repository", "ForumApplication.Repository\ForumApplication.Repository.csproj", "{09F5FB30-A9C3-48B1-8FAF-15430D4E40BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApplication.ServiceLayer", "ForumApplication.ServiceLayer\ForumApplication.ServiceLayer.csproj", "{F5AFA5C2-9040-473D-A812-68D3571FBF85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApplication.ServiceLayer", "ForumApplication.ServiceLayer\ForumApplication.ServiceLayer.csproj", "{FDEB8BEF-29BB-4EFD-BA0B-9A8E46533DC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{09F5FB30-A9C3-48B1-8FAF-15430D4E40BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F5FB30-A9C3-48B1-8FAF-15430D4E40BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F5FB30-A9C3-48B1-8FAF-15430D4E40BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5AFA5C2-9040-473D-A812-68D3571FBF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5AFA5C2-9040-473D-A812-68D3571FBF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5AFA5C2-9040-473D-A812-68D3571FBF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5AFA5C2-9040-473D-A812-68D3571FBF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEB8BEF-29BB-4EFD-BA0B-9A8E46533DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEB8BEF-29BB-4EFD-BA0B-9A8E46533DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEB8BEF-29BB-4EFD-BA0B-9A8E46533DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEB8BEF-29BB-4EFD-BA0B-9A8E46533DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,13 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AnswerViewModel\AnswersViewModel.cs" />
+    <Compile Include="AnswerViewModel\EditAnswersViewModel.cs" />
+    <Compile Include="AnswerViewModel\NewAnswerViewModel.cs" />
+    <Compile Include="CategoriesViewModel\CategoryViewModel.cs" />
+    <Compile Include="LoginAndRegisterViewModel\LoginViewModel.cs" />
+    <Compile Include="LoginAndRegisterViewModel\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionViewModel\EditQuestionsViewModel.cs" />
+    <Compile Include="QuestionViewModel\NewQuestionsViewModel.cs" />
+    <Compile Include="QuestionViewModel\QuestionsViewModel.cs" />
+    <Compile Include="UserViewModel\EditUserDetailsViewModel.cs" />
+    <Compile Include="UserViewModel\EditUserPasswordViewModel.cs" />
+    <Compile Include="UserViewModel\UsersViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

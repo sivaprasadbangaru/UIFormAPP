@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ForumApplication.Repository
 {
-    interface IQuestionRepository
+   public interface IQuestionRepository
     {
         void InsertQuestion(Questions q);
         void UpdateQuestionDetails(Questions q);

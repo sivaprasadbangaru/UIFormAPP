@@ -11,7 +11,7 @@ namespace ForumApplication.Repository
     {
         void UpdateVote(int aid, int uid, int value);
     }
-    public class VotesRepository
+    public class VotesRepository : IVotesRepository
     {
         private ForumAppDbContext _dbContext;
         public VotesRepository()
@@ -20,35 +20,34 @@ namespace ForumApplication.Repository
         }
         public void UpdateVote(int aid, int uid, int value)
         {
-            int updateValue;
-            if(value > 0)
+            int updatevalue;
+          if(value > 0)
             {
-                updateValue = 1;
+                updatevalue = 1;
             }
-            else if(value< 0) { 
-            
-            updateValue = -1;   
-            }
-            else
+          else if(value < 0)
             {
-                updateValue = 0;
-            }
-            var vote = _dbContext.Votes.Where(x => x.AnswerID == aid && x.UserID == uid).FirstOrDefault();
-            if(vote != null)
-            {
-                vote.VoteValues = updateValue;
+                updatevalue = -1;
             }
             else
             {
-                Votes votes = new Votes()
+                updatevalue = 0;
+            }
+            var votes = _dbContext.Votes.Where(x => x.AnswerID == aid && x.UserID == uid).FirstOrDefault();
+            if(votes != null)
+            {
+                votes.VoteValues = updatevalue;
+            }
+            else
+            {
+                Votes vote = new Votes()
                 {
                     UserID = uid,
                     AnswerID = aid,
                     VoteValues = value
-
                 };
-            _dbContext.Votes.Add(vote);
-            _dbContext.SaveChanges();
+                _dbContext.Votes.Add(vote);
+                _dbContext.SaveChanges();
             }
         }
     }
